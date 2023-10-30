@@ -1,0 +1,50 @@
+// Backgrounds & Text & Links & Borders
+
+:root {
+  --dsn-background_color: #000;
+  --dsn-heading-color: #fff;
+  --dsn-body-color: rgba(255, 255, 255, 0.69);
+  --dsn-assistant-background-color: #090909;
+  --dsn-assistant-body-color: #000;
+  --dsn-border-color : rgba(112, 112, 112, 0.5);
+
+  --dsn-background_color-light: #f9f9f9;
+  --dsn-heading-color-light: #000;
+  --dsn-body-color-light: #0009;
+  --dsn-assistant-background-color-light: #e6e6e6;
+  --dsn-border-color-light: #bebebe;
+
+
+}
+
+
+$bg-dark: var(--dsn-background_color);
+$heading-color: var(--dsn-heading-color);
+$body-color: var(--dsn-body-color);
+$dark-color: var(--dsn-assistant-background-color);
+$theme-color: var(--dsn-assistant-body-color);
+$border-color: var(--dsn-border-color);
+
+$bg-light: var(--dsn-background_color-light);
+$heading-color-light: var(--dsn-heading-color-light);
+$body-color-light: var(--dsn-body-color-light);
+$bg-light-2: var(--dsn-assistant-background-color-light);
+$border-color-light: var(--dsn-border-color-light);
+
+.background-main{
+  background-color: $bg-dark;
+
+  body.v-light &{
+    background-color: $bg-light;
+  }
+
+}
+
+.background-section{
+  background-color: $dark-color;
+
+  body.v-light &{
+    background-color: $bg-light-2;
+  }
+
+}
